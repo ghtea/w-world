@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+
+*.js
+*.jsx
+*.ts
+*.tsx
