@@ -6,7 +6,7 @@ module.exports = {
     'airbnb/hooks',
     'prettier',
   ],
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'next.config.js'],
   rules: {
     // formatting
     // pay attention to use same rules with prettier
@@ -53,6 +53,7 @@ module.exports = {
     ],
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/no-unknown-property': ['error', { 'ignore': ['css'] }],
     // a11y
     'jsx-a11y/label-has-associated-control': ['error', { depth: 2 }],
   },
