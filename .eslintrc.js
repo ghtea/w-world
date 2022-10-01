@@ -6,7 +6,7 @@ module.exports = {
     'airbnb/hooks',
     'prettier',
   ],
-  ignorePatterns: ['.eslintrc.js', 'next.config.js'],
+  ignorePatterns: ['.eslintrc.js'],
   rules: {
     // formatting
     // pay attention to use same rules with prettier

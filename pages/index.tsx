@@ -1,15 +1,17 @@
-import { useTheme } from '@emotion/react';
 import type { NextPage } from 'next';
+import { useEffect } from 'react';
+import { useMainGame } from 'games/main';
 
 const Home: NextPage = () => {
-  const theme = useTheme()
+  const { init, animate } = useMainGame()
+
+  useEffect(()=>{
+    init()
+    animate()
+  },[animate, init])
 
   return (
-    <div css={{
-      color: theme.colors.main
-    }}>
-      Home
-    </div>
+    <div/>
   );
 }
 
